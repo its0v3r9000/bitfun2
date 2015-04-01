@@ -14,3 +14,6 @@ end
 
 listdisplay(students)
 
+students["cohort4"] = 45
+
+listdisplay(students)
