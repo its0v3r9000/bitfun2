@@ -20,8 +20,16 @@ listdisplay(students)
 
 puts "The cohorts are #{students.keys}"
 
+students = (students.map { |x, y|  [x, (y * 1.05).to_i]}).to_h
+
+listdisplay(students)
+
 students.delete(:cohort2)
 
 listdisplay(students)
 
+cohortsizes = students.values
 
+x = 0
+cohortsizes.each { |y| x += y }
+puts "#{x}"
