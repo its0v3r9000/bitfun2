@@ -14,6 +14,14 @@ end
 
 listdisplay(students)
 
-students["cohort4"] = 45
+students[:cohort4] = 43
 
 listdisplay(students)
+
+puts "The cohorts are #{students.keys}"
+
+students.delete(:cohort2)
+
+listdisplay(students)
+
+
